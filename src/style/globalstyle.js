@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -8,7 +8,7 @@ html {
 }
   
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 

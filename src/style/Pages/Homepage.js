@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import giphy from "../../assets/giphy.gif";
+import styled from 'styled-components';
+import giphy from '../../assets/giphy.gif';
 
 export const DivCapa = styled.div`
   height: 100vh;
@@ -14,8 +14,8 @@ export const Imagemlogo = styled.img`
 `;
 
 export const TituloCapa = styled.h1`
-  font-weight: 700;
-  font-family: "Comfortaa", cursive;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2%;
   word-spacing: 6%;
   margin-top: 12%;
@@ -33,7 +33,7 @@ export const HrCapa = styled.hr`
 `;
 
 export const TextoCapa = styled.p`
-  font-family: "Comfortaa", cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-left: 5%;
 `;

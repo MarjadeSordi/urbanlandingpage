@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CapsulaFaixa = styled.div`
   width: 100%;
@@ -13,9 +13,9 @@ export const FaixaPrincipal = styled.div`
 `;
 
 export const TituloFaixa = styled.h1`
-  font-weight: 700;  
+  font-weight: 500;  
   margin-left: 40%;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2%;
   word-spacing: 6%;
   text align: center;
@@ -25,7 +25,7 @@ export const TituloFaixa = styled.h1`
 
 export const TituloIcones = styled.h2`
   font-weight: 400;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Roboto', sans-serif;
   color: #373435;
 `;
 

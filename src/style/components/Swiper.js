@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SwipperImg = styled.img`
   width: 10%;
@@ -7,7 +7,8 @@ export const SwipperImg = styled.img`
 
 export const TituloDepo = styled.h1`
   text-align: center;
-  font-weight: 700;
-  font-family: "Comfortaa", cursive;
+  font-weight: 500;
+
+  font-family: 'Roboto', sans-serif;
   color: #828282;
 `;

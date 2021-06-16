@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TituloContratacao = styled.h1`
   color: #828282;
-  text-transform: uppercase;
   text-align: center;
   margin: 2%;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 `;
 
 export const FieldContratacao = styled.fieldset`
@@ -32,11 +32,10 @@ export const InternaContratacao = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2%;
-
   text-align: center;
   justify-content: center;
   align-itens: center;
-  width: 100%;
+  width: 200px;
 `;
 
 export const TituloContratacaoInterna = styled.h2`
