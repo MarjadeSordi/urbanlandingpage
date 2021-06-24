@@ -1,5 +1,5 @@
-import React from "react";
-import { ButtonVermais } from "../../style/components/FaixacomIcones";
+import React from 'react';
+import { ButtonVermais } from '../../style/components/FaixacomIcones';
 import {
   DivDireita,
   TituloServicos,
@@ -8,23 +8,24 @@ import {
   TextoDestaque,
   TextoDescricao,
   DivTexto,
-} from "../../style/components/ServicosOnline";
-import { ServicoInfo } from "./ServicosOnlineDados";
+  DivTextoMeio,
+} from '../../style/components/ServicosOnline';
+import { ServicoInfo } from './ServicosOnlineDados';
 
 const ServicosOnline = () => {
   return (
     <>
       <TituloServicos>Serviços de SaSS Online </TituloServicos>
 
-      {ServicoInfo.map((item) => {
-        if (item.id === "1") {
+      {ServicoInfo.map(item => {
+        if (item.id === '1') {
           return (
             <CapsulaItems>
-              {item.image}{" "}
+              {item.image}{' '}
               <DivTexto>
                 <TextoDestaque>
                   {item.title} <br />
-                </TextoDestaque>{" "}
+                </TextoDestaque>{' '}
                 <TextoDescricao>
                   {item.description}
                   <br />
@@ -34,31 +35,31 @@ const ServicosOnline = () => {
             </CapsulaItems>
           );
         }
-        if (item.id === "2") {
+        if (item.id === '2') {
           return (
             <CapsulaItems>
-              <DivTexto>
+              <DivTextoMeio>
                 <TextoDestaque>
                   {item.title} <br />
-                </TextoDestaque>{" "}
+                </TextoDestaque>{' '}
                 <TextoDescricao>
                   {item.description}
                   <br />
                 </TextoDescricao>
                 <ButtonServicos> {item.buttonText} </ButtonServicos>
-              </DivTexto>{" "}
-              {item.image}{" "}
+              </DivTextoMeio>{' '}
+              {item.image}{' '}
             </CapsulaItems>
           );
         }
-        if (item.id === "3") {
+        if (item.id === '3') {
           return (
             <CapsulaItems>
-              {item.image}{" "}
+              {item.image}{' '}
               <DivTexto>
                 <TextoDestaque>
                   {item.title} <br />
-                </TextoDestaque>{" "}
+                </TextoDestaque>{' '}
                 <TextoDescricao>
                   {item.description}
                   <br />

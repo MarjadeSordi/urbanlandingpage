@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   TituloContratacao,
   ListaContratacao,
@@ -11,14 +11,14 @@ import {
   HrInterna,
   Price,
   ButtonTour,
-} from "../../style/components/FormasdeContracao";
+} from '../../style/components/FormasdeContracao';
 
-import { ContratacaoInfo } from "./FormasdeContratacaodados";
+import { ContratacaoInfo } from './FormasdeContratacaodados';
 
 const FormasdeContratacao = () => {
   return (
     <>
-      {" "}
+      {' '}
       <TituloContratacao> Formas de contratação </TituloContratacao>
       <CapsulaContratacao>
         {ContratacaoInfo.map((item, key) => {
@@ -28,18 +28,17 @@ const FormasdeContratacao = () => {
                 <legend> {item.icon}</legend>
                 <InternaContratacao>
                   <TituloContratacaoInterna>
-                    {" "}
-                    {item.title}{" "}
+                    {' '}
+                    {item.title}{' '}
                   </TituloContratacaoInterna>
                   <TextoContratacao>
-                    {item.description.map((tipe) => {
+                    {item.description.map(tipe => {
                       return <li>{tipe}</li>;
                     })}
 
                     <HrInterna />
                     <Price> {item.price} </Price>
                   </TextoContratacao>
-                  <ButtonContratacao>{item.buttonText} </ButtonContratacao>
                 </InternaContratacao>
               </FieldContratacao>
             </ListaContratacao>

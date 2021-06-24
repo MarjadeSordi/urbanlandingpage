@@ -8,7 +8,7 @@ import {
 } from '../../style/components/ButtonLogin';
 import { AiOutlineRight } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
-import usePassword from '../../hooks/useEye';
+
 import { useHistory } from 'react-router-dom';
 
 const ButtonLogin = () => {
@@ -23,7 +23,7 @@ const ButtonLogin = () => {
       {' '}
       <ButtonLogar type="button" onClick={click}>
         {' '}
-        Login{' '}
+        Login | Cadastro{' '}
       </ButtonLogar>
     </>
   );

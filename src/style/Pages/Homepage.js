@@ -1,26 +1,37 @@
 import styled from 'styled-components';
-import giphy from '../../assets/giphy.gif';
+import helvetica from '../../assets/fonts/helvetica-neue.ttf';
 
 export const DivCapa = styled.div`
-  height: 100vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
 `;
 
 export const Imagemlogo = styled.img`
-  width: 40%;
+  width: 6%;
+  height: 6%;
+  padding-right: 55%;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 1%;
+  cursor: pointer;
+  @media (max-width: 500px) {
+    width: 20%;
+  }
 `;
 
 export const TituloCapa = styled.h1`
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-family: ${helvetica};
   letter-spacing: 2%;
   word-spacing: 6%;
   margin-top: 12%;
   margin-left: 5%;
-  color: #373435;
+  color: #0031a8;
+  font-size: 400%;
+  @media (max-width: 700px) {
+    font-weight: 800;
+    font-size: 200%;
+  }
 `;
 
 export const HrCapa = styled.hr`

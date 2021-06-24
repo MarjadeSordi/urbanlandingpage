@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   FaixaPrincipal,
   ListarIcones,
@@ -8,11 +8,17 @@ import {
   DivTexto,
   ButtonVermais,
   CapsulaFaixa,
-} from "../../style/components/FaixacomIcones";
-import { HrDivisao } from "../../style/Pages/Homepage";
-import { FaixaInfo } from "./FaixaInfos";
+} from '../../style/components/FaixacomIcones';
+import { HrDivisao } from '../../style/Pages/Homepage';
+import { FaixaInfo } from './FaixaInfos';
 
 const FaixacomIcones = () => {
+  const linkwhatsApp = `https://api.whatsapp.com/send?phone=555199829400&text=Texto`;
+
+  function Linkpara() {
+    window.location.href = linkwhatsApp;
+  }
+
   return (
     <CapsulaFaixa>
       <HrDivisao />
@@ -25,7 +31,9 @@ const FaixacomIcones = () => {
                 {item.icon}
                 <TituloIcones> {item.title} </TituloIcones>
                 <TextoIcones> {item.description}</TextoIcones>
-                <ButtonVermais>{item.buttonText} </ButtonVermais>
+                <ButtonVermais onClick={Linkpara}>
+                  {item.buttonText}{' '}
+                </ButtonVermais>
               </DivTexto>
             </ListarIcones>
           );

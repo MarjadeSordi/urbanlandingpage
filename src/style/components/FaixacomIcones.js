@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CapsulaFaixa = styled.div`
   width: 100%;
-  background-color: #f8f8ff;
+  background-color: #ebebeb;
 `;
 
 export const FaixaPrincipal = styled.div`
@@ -10,6 +10,10 @@ export const FaixaPrincipal = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const TituloFaixa = styled.h1`
@@ -19,14 +23,17 @@ export const TituloFaixa = styled.h1`
   letter-spacing: 2%;
   word-spacing: 6%;
   text align: center;
-  color: #373435;
+  color: 393A3A;
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
 
 `;
 
 export const TituloIcones = styled.h2`
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  color: #373435;
+  color: 393a3a;
 `;
 
 export const DivTexto = styled.div`
@@ -40,7 +47,7 @@ export const DivTexto = styled.div`
 `;
 export const TextoIcones = styled.p`
   font-weight: 400;
-  color: #696969;
+  color: 393a3a;
   margin-top: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -55,14 +62,14 @@ export const ListarIcones = styled.li`
 export const ButtonVermais = styled.button`
   border: none;
   color: #ffffff;
-  background-color: #65325b;
+  background-color: #393a3a;
   padding: 2%;
   width: auto;
-  border-radius: 30px;
-  box-shadow: 0 0 1em #add8e6;
+  border-radius: 8px;
+
   cursor: pointer;
   &: hover {
     background-color: #fffafa;
-    color: #65325b;
+    color: #393a3a;
   }
 `;

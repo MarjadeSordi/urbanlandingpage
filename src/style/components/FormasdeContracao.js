@@ -6,6 +6,11 @@ export const TituloContratacao = styled.h1`
   margin: 2%;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  @media (max-width: 700px) {
+    font-size: 150%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
 `;
 
 export const FieldContratacao = styled.fieldset`
@@ -26,6 +31,10 @@ export const CapsulaContratacao = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const InternaContratacao = styled.div`
@@ -36,6 +45,9 @@ export const InternaContratacao = styled.div`
   justify-content: center;
   align-itens: center;
   width: 200px;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 export const TituloContratacaoInterna = styled.h2`
@@ -43,21 +55,6 @@ export const TituloContratacaoInterna = styled.h2`
   color: #828282;
 `;
 
-export const ButtonContratacao = styled.button`
-  border: none;
-  color: #65325b;
-  background-color: transparent;
-  padding: 2%;
-  width: 40%;
-  margin: 0 auto;
-  border-radius: 30px;
-  box-shadow: 0 0 1em #828282;
-  cursor: pointer;
-  &: hover {
-    background-color: #65325b;
-    color: #ffffff;
-  }
-`;
 export const TextoContratacao = styled.p`
   word-wrap: break-word;
   line-height: 200%;
@@ -82,7 +79,7 @@ export const Price = styled.p`
 export const ButtonTour = styled.button`
   border: none;
   color: #ffffff;
-  background-color: #68355e;
+  background-color: #0031a8;
   padding: 1%;
   width: 20%;
   margin: 5%;
@@ -90,7 +87,12 @@ export const ButtonTour = styled.button`
   margin-left: 40%;
   cursor: pointer;
   &: hover {
-    background-color: #65325b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0031a8;
+  }
+  @media (max-width: 700px) {
+    width: 90%;
+    margin-left: 10%;
+    padding: 2%;
   }
 `;

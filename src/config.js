@@ -6,4 +6,3 @@ export const mSenderId = process.env.REACT_APP_messagingSenderId;
 export const aId = process.env.REACT_APP_appId;
 export const mentId = process.env.REACT_APP_mentId;
 
-export const messaging = process.env.REACT_APP_messaging;

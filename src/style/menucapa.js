@@ -1,23 +1,31 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ListMenu = styled.li`
   list-style: none;
-  padding: 5%;
-  margin-top: 2%;
+  padding-right: 5%;
+  margin-top: 0;
 `;
 
 export const ListText = styled.p`
-  color: #4b0082;
+  color: #393a3a;
   &: hover {
     color: #fffafa;
   }
 `;
 
 export const MenuStyle = styled.div`
-  position: absolute;
-  z-index: 1;
-  margin-left: 80%;
-  top: 20%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
-export const MenudivButtons = styled.div``;
+export const MenudivCapsula = styled.div`
+  width: 95%;
+  margin-top: 1%;
+  @media (max-width: 700px) {
+    visibility: hidden;
+  }
+`;
+
+export const MenuResponsivo = styled.button`
+  background-color: transparent;
+`;
