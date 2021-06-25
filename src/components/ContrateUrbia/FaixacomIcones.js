@@ -20,7 +20,7 @@ const FaixacomIcones = () => {
   }
 
   return (
-    <CapsulaFaixa>
+    <CapsulaFaixa id="products">
       <HrDivisao />
       <TituloFaixa> Como contratar a Urbia? </TituloFaixa>
       <FaixaPrincipal>

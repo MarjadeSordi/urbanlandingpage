@@ -17,6 +17,13 @@ import Footer from '../components/Footer/Footer';
 import Buttonlogin from '../components/Botoes/Buttonlogin';
 import Buttoncadastro from '../components/Botoes/Buttoncadastro';
 import ButtonWhatsapp from '../components/Botoes/ButtonWhatsapp';
+import { ButtonTour } from '../style/components/FormasdeContracao';
+
+const linkparafora = 'https://www.urbia.com.br/urbia.html';
+
+function Linkpara() {
+  window.location.href = linkparafora;
+}
 
 const Homepage = () => {
   return (
@@ -37,7 +44,10 @@ const Homepage = () => {
       </DivCapa>
       <FaixacomIcones />
       <ServicosOnline />
-      <FormasdeContratacao />
+      <ButtonTour id="tour" tipe="button" onClick={Linkpara}>
+        {' '}
+        Faça um tour gratuíto{' '}
+      </ButtonTour>
       <SwiperDepoimentos />
     </>
   );

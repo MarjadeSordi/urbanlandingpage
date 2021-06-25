@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import helvetica from '../../assets/fonts/helvetica-neue.ttf';
+import capa from '../../assets/capa_.gif';
 
 export const DivCapa = styled.div`
   height: 70vh;
   background-position: center;
   background-size: cover;
+  background-image: url(${capa});
 `;
 
 export const Imagemlogo = styled.img`

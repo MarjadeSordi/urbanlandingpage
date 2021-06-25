@@ -6,9 +6,10 @@ import {
   ListText,
   MenudivCapsula,
 } from '../../style/menucapa';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { Imagemlogo } from '../../style/Pages/Homepage';
+import { HashLink as Link } from 'react-router-hash-link';
 import urbialogo from '../../assets/Urbia_Blue_Klein.png';
 
 const Menucapa = () => {
@@ -26,7 +27,7 @@ const Menucapa = () => {
           return (
             <ListMenu key={key}>
               {' '}
-              <Link to={item.link} style={{ textDecoration: 'none' }}>
+              <Link smooth to={item.link} style={{ textDecoration: 'none' }}>
                 {' '}
                 <ListText>{item.title} </ListText>
               </Link>{' '}

@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export const Menuinfo = [
-  { title: "Tour", link: "#" },
-  { title: "Product", link: "#" },
-  { title: "Pricing", link: "#" },
-  { title: "Contact", link: "#" },
+  { title: 'Tour', link: '#tour' },
+  { title: 'Product', link: '#servir' },
+  { title: 'Pricing', link: '#' },
 ];
